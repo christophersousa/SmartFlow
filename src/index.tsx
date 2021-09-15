@@ -1,8 +1,10 @@
 import ReactDOM from 'react-dom';
 import {App} from './App';
-import "./styles/global.css";
+import { SmartContextProvider } from './context/SmartContext';
+import "./styles/global.scss";
 ReactDOM.render(
-  
-    <App />,
-  document.getElementById('root')
+    <SmartContextProvider>
+      <App />
+    </SmartContextProvider>
+  ,document.getElementById('root')
 );

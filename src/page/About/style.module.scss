@@ -1,0 +1,19 @@
+.container{
+    padding: 6.5rem 2rem 2rem 2rem; 
+
+    h1,h2{
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+
+    img{
+        max-width: 300px;
+        min-width: 250px;
+        margin: .75rem 1.5rem 0 0;
+        float: left;
+    }
+
+    p{
+        margin-bottom: .75rem;
+    }
+}

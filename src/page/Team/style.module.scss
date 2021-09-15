@@ -1,0 +1,59 @@
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 8rem;
+
+    h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    section{
+        max-width: 350px;
+        width: 18.75rem;
+        text-align: center;
+
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+
+        img{
+            width: 80%;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+
+            width: 100%;
+            padding: .5rem .2rem;
+            font-size: 1.2rem;
+
+            background-color: white;
+            opacity: .5;
+            visibility: hidden;
+            list-style: none;
+            a{
+                text-decoration: none;
+            }
+                
+            }
+
+
+        &:hover{
+            ul{
+                visibility: visible;
+            }
+        }
+
+        div{
+            padding: .75rem .5rem;
+            background-color: #fff;
+            height: 5rem;
+        }
+    }
+
+
+}

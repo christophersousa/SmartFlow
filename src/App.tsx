@@ -1,12 +1,10 @@
 import React from 'react';
-import {Menu} from './Components/Menu'
-import {Home} from './Components/Home'
+import {Routes} from './routes'
+import { BrowserRouter as Router } from 'react-router-dom';
 
-export function App() {
-  return (
-    <>
-      <Menu/> 
-      <Home/>
-    </>
-    );
-}
+
+export const App = () => (
+  <Router>
+    <Routes/>
+  </Router>
+);
