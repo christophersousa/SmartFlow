@@ -5,6 +5,7 @@ import { NewsView } from '../page/NewsView';
 import { News } from '../page/News';
 import { About } from '../page/About';
 import { Team } from '../page/Team';
+import { Contact } from '../page/Contact';
 
 
 
@@ -15,6 +16,7 @@ export const Routes = () => (
     <Route path="/ViewNews" exact component={NewsView} />
     <Route path="/About" exact component={About} />
     <Route path="/Team" exact component={Team} />
+    <Route path="/Contact" exact component={Contact} />
   </Switch>
 );
 

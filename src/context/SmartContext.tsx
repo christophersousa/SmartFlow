@@ -5,7 +5,7 @@ interface IRouterContextProps{
     children: ReactNode,
 }
 
-interface INewType{
+interface INewsType{
     id: number, 
     title: string, 
     descriptions: {description1: string, description2: string, description3: string}[], 
@@ -14,9 +14,9 @@ interface INewType{
 
 interface SmartContextProps{
     navBackground: string,
-    newNews: INewType[],
-    readNews: INewType,
-    setReadNews(d: INewType): void,
+    newNews: INewsType[],
+    readNews: INewsType,
+    setReadNews(d: INewsType): void,
     addNews(): void,
     setTransparent():  void;
     setColorSolid(): void;

@@ -1,0 +1,158 @@
+.container{
+    padding: 8rem 2rem 2rem 2rem;
+    
+    text-align: center;
+    font-size: 1.5rem;
+
+    div:nth-child(2n+1){
+        background-color: white;
+    }
+
+    .containerForm{
+        form{
+            padding: 3rem 2rem;
+            width: 100%;
+            span{
+                font-size: .8rem;
+                padding: .5rem;
+                margin-top: 15px;
+                border-radius: 5px;
+
+                z-index: 10;
+                position: absolute;
+                right: 5%;
+                bottom: -45px;
+
+                background-color: white;
+                color: red;
+                box-shadow: 2px 1px 1px rgba($color: #000000, $alpha: .5);
+
+                &::before{
+                    content: "";
+                    border: 8px solid transparent;
+                    border-bottom-color: white;
+
+                    position: absolute;
+                    top: -15px;
+
+                }
+            }
+
+            select{
+                min-width: 400px;
+                width: 80%;
+                height: 2.5rem;
+                max-height: 40px;
+                padding: 0.5rem;
+    
+                border: none;
+                border-bottom: 1px solid #000;
+                background-color: transparent;
+                color: #000;
+                outline: none;
+                cursor: pointer;
+    
+                font-size: 1rem;
+    
+    
+    
+            }
+    
+            .handleUser{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 2rem;
+    
+                padding: 3rem 2rem;
+                width: 100%;
+
+                div{
+                    position: relative;
+                    background-color: transparent;
+                    width: 40%;
+
+                    &:last-child{
+                        width: 100%;
+                    }
+                }
+                
+                input{
+                    padding: 0.5rem;
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    background-color: transparent;
+                    outline: none;
+                    
+                }
+    
+                textarea{
+                    width: 100%;
+                    height: 10rem;
+                    padding: .5rem;
+    
+                    resize: none;
+                    outline: none;
+
+                    &~span{
+                        bottom: -35px;
+                    }
+                }
+            }
+            button{
+                background-color: var(--blue);
+                    opacity: 0.8;
+                    width: 30%;
+                    height: 2.5rem;
+                    font-size: 1rem;
+    
+                    border-radius: .75rem;
+                    border: 0;
+    
+                    color: white;
+                    font-weight: 600;
+    
+                    &:hover{
+                        opacity: 1;
+                    }
+            }
+
+            div{
+                background-color: transparent;
+                position: relative;
+            }
+            
+        }
+    }
+    
+    .containerSocial{
+        width: 100%;
+        padding: 2rem 4rem;
+
+        h2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+            &::after{
+                content: ' ';
+                display: block;
+                width: 60%;
+                height: 2px;
+                margin-top: 10px;
+                background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+            }
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 8rem;
+
+            margin-top: 2rem;
+
+            list-style: none;
+        }
+    }
+}

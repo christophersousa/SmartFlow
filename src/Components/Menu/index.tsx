@@ -27,7 +27,9 @@ export function Menu({backgroundColor}: MenuProps){
                         <strong><a href="**">TEAM</a></strong>
                     </Link>
                     <strong><a href="**">PRODUCTION</a></strong>
-                    <strong><a href="**">CONTACT</a></strong>
+                    <Link to="./Contact">
+                        <strong><a href="**">CONTACT</a></strong>
+                    </Link>
                 </div>
             </div>
         </div>
